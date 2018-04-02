@@ -1,0 +1,73 @@
+
+*{ margin:0; padding:0; font-family:'Microsoft yahei';}
+img{ display:block; border:none;}
+li{ list-style:None;}
+a{ text-decoration:none;}
+
+body{ min-width:1226px; background:#fff;}
+
+/*header*/
+	#header{ width:100%; height:40px; background:rgb(51,51,51); position:relative; z-index:2;}
+	#header .h_main{ width:1226px; height:100%; margin:0 auto;}
+	#header .h_m_left{ width:600px; height:100%; float:left; }
+	#header .h_m_left li,#header .h_m_r_login li{ float:left; font-size:12px; color:#666; line-height:40px; margin-right:5px;}
+	#header .h_m_left li a,#header .h_m_r_login li a{ color:#b0b0b0; margin-right:5px;}
+	#header .h_m_left li a:hover,#header .h_m_r_login li a:hover{ color:#fff;}
+	#header .h_m_right{ width:300px; height:100%; float:right;}
+	#header .h_m_r_login{ width:150px; float:left; height:100%;}
+	#header .h_m_r_buy{ width:120px; float:right; height:100%; background:#424242; position:relative;}
+	#header .h_m_r_buy a.buy{ position:relative; z-index:2; text-align:center; width:100%; height:100%; display:block; line-height:40px; color:#b0b0b0; font-size:12px;}
+	#header .h_m_r_buy a.buy .iconfont{ margin-right:5px;}
+	#header .h_m_r_buy a.buy.hover{ color:#f60; background:#fff;}
+	#header .h_m_r_buy .hide{ width:320px; height:100px; position:absolute; right:0; top:40px; background:#fff; box-shadow:0 0 1px #666; font-size:12px; line-height:100px; color:#666; text-align:center; display:none;}
+
+/*nav*/
+	#nav{ width:100%; height:69px; margin-top:20px; position:relative; background:#fff; z-index:98;}
+	#nav .nav_content{ width:1226px; height:69px; margin:0 auto;}
+	#nav .n_logo{ width:49px; height:49px; float:left;}
+	#nav .n_logo a{ display:block; width:100%; height:100%; background:#f60;}
+	#nav .n_main{ width:670px; height:69px; float:left; margin-left:190px;}
+	#nav .n_main li{ float:left; height:69px;}
+	#nav .n_main li a{ height:49px; line-height:49px; display:block; cursor:pointer; padding:0 10px; color:#333; font-size:16px;}
+	#nav .n_main li a:hover{ color:#f60;}
+	#nav .nav_hide{ background:#fff; width:100%; height:230px; position:absolute; top:69px; left:0; border-top:1px solid #ddd; box-shadow:0 2px 2px #bbb; display:none;}
+	#nav .n_h_main{ width:1226px; height:230px; margin:0 auto; position:relative;}
+	#nav .n_h_main ul{ width:1226px; height:230px; position:absolute; top:0; left:0; display:none;}
+	#nav .n_h_main li{ width:200px; height:230px; float:left; font-size:12px; text-align:center;}
+	#nav .n_h_main li .img{ width:199px; height:110px; margin-top:35px; border-right:1px solid #ddd;}
+	#nav .n_h_main li .img img{ margin:0 auto;}
+	#nav .n_h_main li p.name{ margin-top:20px;}
+	#nav .n_h_main li p.name a{ color:#333;}
+	#nav .n_h_main li p.price{ margin-top:3px; color:#f60;}
+	#nav .n_search{ width:300px; height:49px; float:right;}
+	#nav .n_search .n_s_input{ transition:.2s; position:relative; width:247px; height:47px; border:1px solid #ccc; float:left; border-right:none; }
+	#nav .n_search .n_s_input input{ text-indent:10px; width:247px; height:47px; display:block; border:none; outline:none;}
+	#nav .n_search .n_s_input a.tip{ transition:color .2s,background .2s; position:absolute; top:14px; font-size:12px; color:#777; background:#eee; padding:1px 3px;}
+	#nav .n_search .n_s_input a.a1{ left:103px;}
+	#nav .n_search .n_s_input a.a2{ left:161px;}
+	#nav .n_search .n_s_input a.tip:hover{ color:#fff; background:#f60;}
+	#nav .n_search .n_s_btn{ transition:.2s; width:50px; height:47px; border:1px solid #ccc; float:right; line-height:47px; color:#777; text-align:center;}
+	#nav .n_search .n_s_btn span{ font-size:22px;}
+	#nav .n_search:hover .n_s_input,#nav .n_search:hover .n_s_btn{ border-color:#999;}
+	#nav .n_search .n_s_btn:hover{ background:#f60; color:#fff; border-color:#f60;}
+	#nav .n_search.focus .n_s_input,#nav .n_search.focus .n_s_btn{ border-color:#f60;}
+	#nav .n_search .n_s_input .hide{ background:#fff; display:none; width:247px; height:360px; border:1px solid #f60; border-top:none; position:absolute; top:48px; left:-1px;}
+	#nav .n_search .n_s_input .hide li{ height:30px; width:100%; line-height:30px;}
+	#nav .n_search .n_s_input .hide li a{ font-size:12px; display:block; width:100%; height:100%;}
+	#nav .n_search .n_s_input .hide li a span.s1{ float:left; color:#555; margin-left:15px;}
+	#nav .n_search .n_s_input .hide li a span.s2{ float:right; color:#bbb; margin-right:15px;}
+	#nav .n_search .n_s_input .hide li a:hover{ background:#eee;}
+
+/*banner*/
+	#banner{ width: 1226px; height: 460px; margin: 0 auto; background: #fff; position: relative; }
+	#banner .b_main{ width: 100%; height: 100%; position: relative; }
+	#banner .b_m_pic{ width: 100%; height: 100%; position: relative; }
+	#banner .b_m_pic li {display: none; width: 100%; height: 100%; position: absolute; top: 0; right: 0; }
+	#banner .b_m_tab { width: 102px; height: 10px; position: absolute; bottom: 20px; right: 20px; }
+	#banner .b_m_tab li { width: 6px; height: 6px; border-radius: 50%; background: #777; cursor: pointer; border:2px solid #bbb; float: left; margin:0 5px;}
+	#banner .b_m_tab li.on{ background: #eee; border-color: #777; }
+    #banner .b_m_btn .btn{ position: absolute; width: 40px; height: 69px; cursor: pointer; background-image: url(../img/banner/btn.png); top: 50%; margin-top: -34.5px }
+    #banner .b_m_btn .btn.left{ left: 234px; border-radius: 0 3px 3px 0; background-position: -84px 0; }
+	#banner .b_m_btn .btn.right{ right:0px; border-radius: 0 3px 3px 0; background-position: top right; }
+	#banner .b_m_btn .btn.left:hover{ background-position: 0 0; }
+	#banner .b_m_btn .btn.right:hover{ background-position: -44px 0; }
